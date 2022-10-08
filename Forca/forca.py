@@ -9,7 +9,7 @@ tentativas = []
 palavMent = []
 palavraCerta = random.choice(palavras)
 palavC = list(palavraCerta)
-print("Bem vindo ao jogo da Forca mais dificil do mundo\nApenas escolha uma letra e eu te digo se acertou ou não.")
+print("Bem vindo ao jogo da Forca mais dificil do mundo.\nApenas escolha uma letra e eu te digo se acertou ou não.")
 
 while m < len(palavraCerta):
     palavMent.insert(m,"_")
@@ -22,7 +22,7 @@ while t > 0:
     letra = input("\nFaça sua escolha:")
     os.system("cls")
     if letra in tentativas:
-        print("\nchutando a mesma letra? aaa para ne\n")
+        print("\nchutando a mesma letra? aaa para ne.\n")
     elif letra not in palavraCerta:
         t-=1
         if t == 0:
