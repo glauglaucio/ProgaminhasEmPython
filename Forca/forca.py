@@ -22,7 +22,7 @@ while t > 0:
     letra = input("\nFaça sua escolha:")
     os.system("cls")
     if letra in tentativas:
-        print("\nchutando a mesma letra? aaa para ne.\n")
+        print("\nChutando a mesma letra? aaa para ne.\n")
     elif letra not in palavraCerta:
         t-=1
         if t == 0:
