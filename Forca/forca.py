@@ -35,7 +35,6 @@ while t > 0:
                 if "_" not in palavMent:
                     t = 0
                     print(stages[6],"\nOQUE? COMO?\nCOMO VOCE GANHOU?\nOk, só conseguiu ganhar pq tava fácil.")
-                    exit
                 i+=1
             else:
                 i+=1
