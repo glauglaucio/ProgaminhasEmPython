@@ -1,3 +1,4 @@
+from multiprocessing.dummy import shutdown
 from bonequinhos import stages
 from palavras import palavras
 import os
@@ -27,18 +28,18 @@ while t > 0:
         t-=1
         if t == 0:
             print(stages[0],"\nVixe amigo, perdeu ein.\nTudo bem, voce pode tentar de novo na próxima.\nPor via das dúvidas a palavra era",palavraCerta,end = ".")
-            break
         print("\nHmm... sei não ein, acho que essa letra ai não tem.\n")  
     elif letra in palavC:
-        print("\nIMPOSSIVEL, COMO VOCE SABE?\n") 
         while i < len(palavraCerta):
             if letra in palavC[i]:
                 palavMent[i]=letra
                 if "_" not in palavMent:
                     t = 0
-                    print(stages[6],"\nVOCE GANHOU, mas... como?")
+                    print(stages[6],"\nOQUE? COMO?\nCOMO VOCE GANHOU?\nOk, só conseguiu ganhar pq tava fácil.")
+                    exit
                 i+=1
             else:
                 i+=1
+        if t != 0: print("\nIMPOSSIVEL, COMO VOCE SABE?\n")
         i=0  
     tentativas.append(letra)
