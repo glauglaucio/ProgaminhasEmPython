@@ -1,4 +1,3 @@
-from multiprocessing.dummy import shutdown
 from bonequinhos import stages
 from palavras import palavras
 import os
