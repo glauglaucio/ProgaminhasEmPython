@@ -1,0 +1,17 @@
+palavras = [
+    'abelha',
+    'assombrar',
+    'alface',
+    'asfalto',
+    'autista',
+    'baralho',
+    'bacana',
+    'barata',
+    'bandido',
+    'barricada',
+    'cupom',
+    'cuspir',
+    'cabeludo',
+    'compartilhamento',
+    'disponibilizar',
+]
