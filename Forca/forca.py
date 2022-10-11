@@ -19,14 +19,16 @@ while t > 0:
     print("Voce tem",t,"tentativas agora... cuidado.")
     print(stages[t])
     print(' '.join(palavMent))
-    letra = input("\nFaça sua escolha:")
+    letra = input("\nFaça sua escolha:").lower
     os.system("cls")
+
     if letra in tentativas:
         print("\nChutando a mesma letra? aaa para ne.\n")
-    elif letra not in palavraCerta:
+    elif letra not in palavC:
         t-=1
         if t == 0:
             print(stages[0],"\nVixe amigo, perdeu ein.\nTudo bem, voce pode tentar de novo na próxima.\nPor via das dúvidas a palavra era",palavraCerta,end = ".")
+            exit()
         print("\nHmm... sei não ein, acho que essa letra ai não tem.\n")  
     elif letra in palavC:
         while i < len(palavraCerta):
