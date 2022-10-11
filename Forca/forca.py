@@ -22,8 +22,7 @@ while t > 0:
     print(' '.join(palavMent))
     letra = input("\nFaça sua escolha:").lower()
     os.system("cls")
-    print(letra)
-    print(tentativas)
+    
     if letra in tentativas:
         print("\nChutando a mesma letra? aaa para ne.\n")
     elif letra not in palavC:
@@ -39,9 +38,10 @@ while t > 0:
                 if "_" not in palavMent:
                     t = 0
                     print(stages[6],"\nOQUE? COMO?\nCOMO VOCE GANHOU?\nOk, só conseguiu ganhar pq tava fácil.")
+                    exit()
                 i+=1
             else:
                 i+=1
-        if t != 0: print("\nIMPOSSIVEL, COMO VOCE SABE?\n")
+        print("\nIMPOSSIVEL, COMO VOCE SABE?\n")
         i=0  
     tentativas.extend(letra)
