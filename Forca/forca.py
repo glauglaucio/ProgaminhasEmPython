@@ -1,8 +1,8 @@
 from bonequinhos import stages
 from palavras import palavras
 import os
-os.system("cls")
 import random
+os.system("cls")
 i = m = 0
 t = 6
 tentativas = []
