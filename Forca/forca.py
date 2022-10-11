@@ -1,3 +1,4 @@
+from operator import le
 from bonequinhos import stages
 from palavras import palavras
 import os
@@ -19,9 +20,10 @@ while t > 0:
     print("Voce tem",t,"tentativas agora... cuidado.")
     print(stages[t])
     print(' '.join(palavMent))
-    letra = input("\nFaça sua escolha:").lower
+    letra = input("\nFaça sua escolha:").lower()
     os.system("cls")
-
+    print(letra)
+    print(tentativas)
     if letra in tentativas:
         print("\nChutando a mesma letra? aaa para ne.\n")
     elif letra not in palavC:
@@ -42,4 +44,4 @@ while t > 0:
                 i+=1
         if t != 0: print("\nIMPOSSIVEL, COMO VOCE SABE?\n")
         i=0  
-    tentativas.append(letra)
+    tentativas.extend(letra)
